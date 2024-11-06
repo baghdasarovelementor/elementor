@@ -37,6 +37,9 @@ on:
             required: true
             description: 'Cancel tests when one of them fails'
             default: false
+        test_tag:
+          description: 'Tag to filter tests (e.g., smoke, regression)'
+          required: false
 
 # This allows a subsequently queued workflow run to interrupt previous runs
 concurrency:
